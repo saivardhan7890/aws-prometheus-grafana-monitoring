@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'monitoring-server'
+    static_configs:
+      - targets: ['localhost:9100']
+
+  - job_name: 'private-python-server'
+    static_configs:
+      - targets: ['10.0.144.49:9100']
