@@ -8,4 +8,4 @@ scrape_configs:
 
   - job_name: 'private-python-server'
     static_configs:
-      - targets: ['10.0.144.49:9100']
+      - targets: ['*********:9100']
